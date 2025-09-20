@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Clone — Верстка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="images/YouTube_logo.png" alt="TubeClone Logo">
+        </span>SenQubyr
+    </div>
+    <div class="search">
+        <input id="search" placeholder="Поиск" />
+        <button class="icon-btn" title="Поиск">🔍</button>
+    </div>
+    <div class="flex">
+        <button class="icon-btn" title="Создать">➕</button>
+        <button class="icon-btn" title="Уведомления">🔔</button>
+        <div class="icon-btn">👤</div>
+    </div>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <div class="section">
+            <a class="nav-item" href="index.html"><span>🏠</span>Главная</a>
+            <a class="nav-item" href="trending.html"><span>🔥</span>В тренде</a>
+            <a class="nav-item" href="subscriptions.html"><span>📺</span>Подписки</a>
+        </div>
+        <div class="section">
+            <div style="color:var(--muted);font-size:13px;padding:6px 8px">Библиотека</div>
+            <a class="nav-item" href="history.html">История</a>
+            <a class="nav-item" href="liked.html">Понравившиеся</a>
+        </div>
+    </aside>
+
+
+    <main class="main">
+        <section class="hero">
+            <div>
+                <div class="player" id="player">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="videos/Moldanazar - Өзің ғана.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+
+                </div>
+
+                <div class="video-info">
+                    <h2 class="video-title">Video Title - Example</h2>
+                    <div class="meta">1,234 views • Sept. 18, 2025</div>
+                    <div style="height:12px"></div>
+                    <div class="flex">
+                        <button class="icon-btn">👍</button>
+                        <button class="icon-btn">👎</button>
+                        <button class="icon-btn">Share</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <aside class="related">
+                <div class="video-card">
+                    <div class="thumb"></div>
+                    <div class="card-body">
+                        <div class="card-title">Recommended video 1</div>
+                        <div class="card-sub">Channel • 123K views</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="thumb"></div>
+                    <div class="card-body">
+                        <div class="card-title">Recommended video 2</div>
+                        <div class="card-sub">Channel • 54K views</div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section>
+            <h3 style="margin:0 0 8px">Video</h3>
+            <div class="grid">
+
+                <div class="tile">
+                    <div class="thumb-lg"></div>
+                    <div class="tmeta">
+                        <p class="ttitle">How to create your own project - instructions</p>
+                        <p class="tsub">Channel • 12K views • 3 days ago</p>
+                    </div>
+                </div>
+
+                <div class="tile">
+                    <div class="thumb-lg"></div>
+                    <div class="tmeta">
+                        <p class="ttitle">UI/UX life hacks</p>
+                        <p class="tsub">Design Channel • 89K views</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script>
+    document.getElementById('search').addEventListener('keydown', function(e){
+        if(e.key === 'Enter'){
+            alert('Поиск: ' + this.value);
+        }
+    });
+</script>
+</body>
+</html>

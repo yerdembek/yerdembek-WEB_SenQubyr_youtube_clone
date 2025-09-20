@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Понравившиеся - TubeClone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="images/YouTube_logo.png" alt="TubeClone Logo">
+        </span>SenQubyr
+    </div>
+    <div class="search">
+        <input id="search" placeholder="Поиск" />
+        <button class="icon-btn" title="Поиск">🔍</button>
+    </div>
+    <div class="flex">
+        <button class="icon-btn" title="Создать">➕</button>
+        <button class="icon-btn" title="Уведомления">🔔</button>
+        <div class="icon-btn">👤</div>
+    </div>
+</header>
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="section">
+            <a class="nav-item" href="index.html"><span>🏠</span>Главная</a>
+            <a class="nav-item" href="trending.html"><span>🔥</span>В тренде</a>
+            <a class="nav-item" href="subscriptions.html"><span>📺</span>Подписки</a>
+        </div>
+        <div class="section">
+            <div style="color:var(--muted);font-size:13px;padding:6px 8px">Библиотека</div>
+            <a class="nav-item" href="history.html">История</a>
+            <a class="nav-item" href="liked.html">Понравившиеся</a>
+        </div>
+    </aside>
+
+    <main>
+        <h2>Понравившиеся видео</h2>
+        <div class="video-grid">
+            <!-- Видео 1 -->
+            <div class="video-card">
+                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="video">
+                <h3>Лучший трек всех времён</h3>
+                <p class="channel-name">Music Channel</p>
+                <p class="video-info">2,3 млн просмотров • 2 года назад</p>
+            </div>
+            <!-- Видео 2 -->
+            <div class="video-card">
+                <img src="https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg" alt="video">
+                <h3>PSY - GANGNAM STYLE</h3>
+                <p class="channel-name">Official PSY</p>
+                <p class="video-info">5,1 млрд просмотров • 10 лет назад</p>
+            </div>
+            <!-- Видео 3 -->
+            <div class="video-card">
+                <img src="https://i.ytimg.com/vi/3JZ_D3ELwOQ/hqdefault.jpg" alt="video">
+                <h3>Mark Ronson - Uptown Funk ft. Bruno Mars</h3>
+                <p class="channel-name">MarkRonsonVEVO</p>
+                <p class="video-info">4,9 млрд просмотров • 8 лет назад</p>
+            </div>
+            <!-- Видео 4 -->
+            <div class="video-card">
+                <img src="https://i.ytimg.com/vi/L_jWHffIx5E/hqdefault.jpg" alt="video">
+                <h3>Coolio - Gangsta's Paradise</h3>
+                <p class="channel-name">Coolio</p>
+                <p class="video-info">1,3 млрд просмотров • 12 лет назад</p>
+            </div>
+        </div>
+    </main>
+
+</div>
+<script>
+    // Небольшая интерактивность: клавиша Enter в поиске
+    document.getElementById('search').addEventListener('keydown', function(e){
+        if(e.key === 'Enter'){
+            alert('Поиск: ' + this.value);
+        }
+    });
+</script>
+</body>
+</html>
