@@ -118,3 +118,33 @@ a {text-decoration:none;color:inherit}
     object-fit: cover; /* или contain, если хочешь с черными полосами */
     border-radius: 10px;
 }
+
+.footer {
+    background: #111;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid #222;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-copy {
+    font-size: 12px;
+    color: #666;
+}
