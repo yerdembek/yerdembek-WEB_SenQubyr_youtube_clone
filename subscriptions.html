@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Подписки — TubeClone</title>
+    <title>Subscriptions — SenQubyr</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,44 +11,44 @@
 <header class="header">
     <div class="logo">
         <img src="images/YouTube_logo.png" alt="TubeClone Logo">
-        </span>SenQubyr
+        SenQubyr
     </div>
     <div class="search">
-        <input id="search" placeholder="Поиск" />
-        <button class="icon-btn" title="Поиск">🔍</button>
+        <input id="search" placeholder="Search" />
+        <button class="icon-btn" title="Search">🔍</button>
     </div>
     <div class="flex">
-        <button class="icon-btn" title="Создать">➕</button>
-        <button class="icon-btn" title="Уведомления">🔔</button>
-        <div class="icon-btn">👤</div>
+        <button class="icon-btn" title="Create">➕</button>
+        <button class="icon-btn" title="Notifications">🔔</button>
+        <a class="icon-btn" href="profile.html" title="Profile">👤</a>
     </div>
 </header>
 
 <div class="layout">
     <aside class="sidebar">
         <div class="section">
-            <a class="nav-item" href="index.html"><span>🏠</span>Главная</a>
-            <a class="nav-item" href="trending.html"><span>🔥</span>В тренде</a>
-            <a class="nav-item" href="subscriptions.html"><span>📺</span>Подписки</a>
+            <a class="nav-item" href="index.html"><span>🏠</span>Home</a>
+            <a class="nav-item" href="trending.html"><span>🔥</span>Trending</a>
+            <a class="nav-item" href="subscriptions.html"><span>📺</span>Subscriptions</a>
         </div>
         <div class="section">
-            <div style="color:var(--muted);font-size:13px;padding:6px 8px">Библиотека</div>
-            <a class="nav-item" href="history.html">История</a>
-            <a class="nav-item" href="liked.html">Понравившиеся</a>
+            <div style="color:var(--muted);font-size:13px;padding:6px 8px">Library</div>
+            <a class="nav-item" href="history.html">History</a>
+            <a class="nav-item" href="liked.html">Liked</a>
         </div>
     </aside>
 
 
     <main class="main">
         <section>
-            <h2 style="margin:0 0 16px">Ваши подписки</h2>
+            <h2 style="margin:0 0 16px">Your subscriptions</h2>
             <div class="grid">
-                <!-- Пример карточки канала -->
+
                 <div class="tile">
                     <div class="thumb-lg" style="background:#333 url('https://via.placeholder.com/250x150') center/cover no-repeat;"></div>
                     <div class="tmeta">
                         <p class="ttitle">Tech Channel</p>
-                        <p class="tsub">Новые видео о технологиях • 2 дня назад</p>
+                        <p class="tsub">New Technology Videos • 2 days ago</p>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                     <div class="thumb-lg" style="background:#333 url('https://via.placeholder.com/250x150/ff4444/ffffff') center/cover no-repeat;"></div>
                     <div class="tmeta">
                         <p class="ttitle">Gaming World</p>
-                        <p class="tsub">Стримы и обзоры • 5 часов назад</p>
+                        <p class="tsub">Streams and Reviews • 5 hours ago</p>
                     </div>
                 </div>
 
@@ -64,11 +64,11 @@
                     <div class="thumb-lg" style="background:#333 url('https://via.placeholder.com/250x150/4444ff/ffffff') center/cover no-repeat;"></div>
                     <div class="tmeta">
                         <p class="ttitle">Music Live</p>
-                        <p class="tsub">Концерты и клипы • 1 день назад</p>
+                        <p class="tsub">Concerts and videos • 1 day ago</p>
                     </div>
                 </div>
 
-                <!-- можно добавить больше -->
+
             </div>
         </section>
     </main>
@@ -77,7 +77,7 @@
 <script>
     document.getElementById('search').addEventListener('keydown', function(e){
         if(e.key === 'Enter'){
-            alert('Поиск: ' + this.value);
+            alert('Search: ' + this.value);
         }
     });
 </script>

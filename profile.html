@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - TubeClone</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="images/YouTube_logo.png" alt="TubeClone Logo">
+        SenQubyr
+    </div>
+    <div class="search">
+        <input id="search" placeholder="Поиск" />
+        <button class="icon-btn" title="Поиск">🔍</button>
+    </div>
+    <div class="flex">
+        <button class="icon-btn" title="Create">➕</button>
+        <button class="icon-btn" title="Notifications">🔔</button>
+        <a class="icon-btn" href="profile.html" title="Profile">👤</a>
+    </div>
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="section">
+            <a class="nav-item" href="index.html"><span>🏠</span>Main</a>
+            <a class="nav-item" href="trending.html"><span>🔥</span>Trending</a>
+            <a class="nav-item" href="subscriptions.html"><span>📺</span>Subscriptions</a>
+        </div>
+        <div class="section">
+            <div style="color:var(--muted);font-size:13px;padding:6px 8px">Library</div>
+            <a class="nav-item" href="history.html">History</a>
+            <a class="nav-item" href="liked.html">Liked</a>
+        </div>
+    </aside>
+
+    <main>
+        <h2>My profile</h2>
+        <div class="profile-card">
+            <img src="images/Alisher.jpg" alt="Аватар" style="width:120px;border-radius:50%">
+            <h3>SenQubyr</h3>
+            <p>Name: breadovv</p>
+            <p>Email: alisher@gmail.com</p>
+            <p>Subscribers: 9999999999</p>
+            <p>Uploaded video: 1</p>
+        </div>
+    </main>
+
+</div>
+
+<script>
+
+    document.getElementById('search').addEventListener('keydown', function(e){
+        if(e.key === 'Enter'){
+            alert('Поиск: ' + this.value);
+        }
+    });
+</script>
+
+</body>
+</html>

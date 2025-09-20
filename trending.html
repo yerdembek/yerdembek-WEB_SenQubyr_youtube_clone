@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>В тренде — TubeClone</title>
+  <title>Trending — SenQubyr</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,72 +11,72 @@
 <header class="header">
   <div class="logo">
     <img src="images/YouTube_logo.png" alt="TubeClone Logo">
-    </span>SenQubyr
+    SenQubyr
   </div>
   <div class="search">
-    <input id="search" placeholder="Поиск" />
-    <button class="icon-btn" title="Поиск">🔍</button>
+    <input id="search" placeholder="Search" />
+    <button class="icon-btn" title="Search">🔍</button>
   </div>
   <div class="flex">
-    <button class="icon-btn" title="Создать">➕</button>
-    <button class="icon-btn" title="Уведомления">🔔</button>
-    <div class="icon-btn">👤</div>
+    <button class="icon-btn" title="Create">➕</button>
+    <button class="icon-btn" title="Notifications">🔔</button>
+    <a class="icon-btn" href="profile.html" title="Profile">👤</a>
   </div>
 </header>
 
 <div class="layout">
   <aside class="sidebar">
     <div class="section">
-      <a class="nav-item" href="index.html"><span>🏠</span>Главная</a>
-      <a class="nav-item" href="trending.html"><span>🔥</span>В тренде</a>
-      <a class="nav-item" href="subscriptions.html"><span>📺</span>Подписки</a>
+      <a class="nav-item" href="index.html"><span>🏠</span>Home</a>
+      <a class="nav-item" href="trending.html"><span>🔥</span>Trending</a>
+      <a class="nav-item" href="subscriptions.html"><span>📺</span>Subscriptions</a>
     </div>
     <div class="section">
-      <div style="color:var(--muted);font-size:13px;padding:6px 8px">Библиотека</div>
-      <a class="nav-item" href="history.html">История</a>
-      <a class="nav-item" href="liked.html">Понравившиеся</a>
+      <div style="color:var(--muted);font-size:13px;padding:6px 8px">Library</div>
+      <a class="nav-item" href="history.html">History</a>
+      <a class="nav-item" href="liked.html">Liked</a>
     </div>
   </aside>
 
 
   <main class="main">
     <section>
-      <h2 style="margin:0 0 16px">Популярное сегодня</h2>
+      <h2 style="margin:0 0 16px">Popular today</h2>
       <div class="grid">
-        <!-- Пример карточки трендового видео -->
+
         <div class="tile">
           <div class="thumb-lg" style="background:#333 url('https://via.placeholder.com/250x150/ffcc00/000000') center/cover no-repeat;"></div>
           <div class="tmeta">
-            <p class="ttitle">Новый хит 2025</p>
-            <p class="tsub">Music Channel • 2M просмотров • 1 день назад</p>
+            <p class="ttitle">New hit 2025</p>
+            <p class="tsub">Music Channel • 2M views • 1 day ago</p>
           </div>
         </div>
 
         <div class="tile">
           <div class="thumb-lg" style="background:#333 url('https://via.placeholder.com/250x150/00ccff/000000') center/cover no-repeat;"></div>
           <div class="tmeta">
-            <p class="ttitle">Лучшие моменты футбола</p>
-            <p class="tsub">SportsHub • 950K просмотров • 5 часов назад</p>
+            <p class="ttitle">Football's best moments</p>
+            <p class="tsub">SportsHub • 950K views • 5 hours ago</p>
           </div>
         </div>
 
         <div class="tile">
           <div class="thumb-lg" style="background:#333 url('https://via.placeholder.com/250x150/cc44ff/ffffff') center/cover no-repeat;"></div>
           <div class="tmeta">
-            <p class="ttitle">Обзор новинок технологий</p>
-            <p class="tsub">Tech Today • 1.3M просмотров • 2 дня назад</p>
+            <p class="ttitle">Review of new technologies</p>
+            <p class="tsub">Tech Today • 1.3M views • 2 days ago</p>
           </div>
         </div>
 
         <div class="tile">
           <div class="thumb-lg" style="background:#333 url('https://via.placeholder.com/250x150/44ff88/000000') center/cover no-repeat;"></div>
           <div class="tmeta">
-            <p class="ttitle">Топ сериалов сезона</p>
-            <p class="tsub">Cinema Life • 500K просмотров • 10 часов назад</p>
+            <p class="ttitle">Top TV series of the season</p>
+            <p class="tsub">Cinema Life • 500K views • 10 hours ago</p>
           </div>
         </div>
 
-        <!-- можно добавить больше карточек -->
+
       </div>
     </section>
   </main>
@@ -85,7 +85,7 @@
 <script>
   document.getElementById('search').addEventListener('keydown', function(e){
     if(e.key === 'Enter'){
-      alert('Поиск: ' + this.value);
+      alert('Search: ' + this.value);
     }
   });
 </script>
