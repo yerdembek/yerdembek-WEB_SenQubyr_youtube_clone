@@ -1,0 +1,200 @@
+:root{
+    --bg: linear-gradient(180deg, #ffffff, rgb(243, 243, 243));
+    --card: #fff7b9;
+    --glass: rgba(255, 247, 185, 0.71);
+    --muted: #0e0e0e;
+
+}
+
+* {
+    box-sizing: border-box
+}
+
+#SenQubyr {
+    text-decoration: none;
+    color: #00c5ff;
+    font-weight: bold;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px  1px 0 #000,
+            1px  1px 0 #000;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #000000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: var(--card);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02)
+}
+
+.icon-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.56);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 18px;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+.icon-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.icon-btn.a{
+    background: var(--glass);
+    text-decoration: none;
+    padding: 3px 8px;
+    object-fit: contain;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+
+.search input {
+    outline: none;
+    flex: 1;
+    padding: 1vh 5vw;
+    border-radius: 20vh;
+    border: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    color: inherit
+}
+/* I finished header (Beknur) */
+
+.layout {
+    display: grid;
+    grid-template-columns:260px 1fr;
+    gap: 20px;
+    padding: 20px
+}
+
+.sidebar {
+    border-right: 1px solid lightslategrey;
+    padding-right: 10px;
+    background: transparent;
+    padding: 8px 4px
+}
+.sidebar img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.sidebar .section {
+    margin-bottom: 10px
+}
+
+.nav-item {
+    text-decoration: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--muted);
+    cursor: pointer;
+}
+.nav-item:hover {
+    background: var(--glass);
+    color: inherit
+}
+.nav-item.active{
+    background: var(--glass);
+    color: inherit;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px
+}
+
+.grid .tile {
+    background: var(--card);
+    padding: 8px;
+    border-radius: 10px
+}
+
+.tile .thumb {
+    width: 100%;
+    background: #222;
+    border-radius: 6px;
+    display: block;
+    overflow: hidden;
+}
+
+.tile .thumb-lg {
+    width: 100%;
+    height: 150px;
+    background: #222;
+    border-radius: 6px;
+    display: block
+}
+.tile .thumb-shorts {
+    aspect-ratio: 9 / 16;
+}
+
+.tile .tmeta {
+    padding: 8px 0
+}
+
+.tile .ttitle {
+    font-size: 15px;
+    margin: 0
+}
+
+.tile .tsub {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.section-title {
+    font-weight: normal;
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 0;
+    grid-column: 1 / -1;
+    margin: 0 10px;
+}
+
+
